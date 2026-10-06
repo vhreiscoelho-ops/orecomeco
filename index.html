@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Do Vermelho ao Controle: plano de 30 dias para organizar as contas</title>
+<meta name="description" content="Ebook com plano de 30 dias: mapa das contas, orçamento que cabe no mês e roteiro de negociação. 10 minutos por dia. Garantia de 7 dias.">
+<meta name="theme-color" content="#0A1F28">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Do Vermelho ao Controle: plano de 30 dias para organizar as contas">
+<meta property="og:description" content="Mapa das contas, orçamento que cabe no mês e roteiro de negociação. Cerca de 10 minutos por dia. Garantia de 7 dias.">
+<meta property="og:image" content="img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Aviso: página educativa. Sem promessa de quitação, desconto ou "nome limpo". -->
+
+<link rel="preload" href="fonts/dmserif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/source.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/livro.webp" fetchpriority="high">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.className='js pre';setTimeout(function(){document.documentElement.classList.remove('pre')},2800)</script>
+
+<!-- ============================================================
+     PONTOS DE INTEGRAÇÃO (preencher antes de publicar)
+     1) PIXEL DA META ........ bloco "PIXEL META" abaixo (trocar 1822142235459212)
+     2) CHECKOUT KIWIFY ...... todos os botões usam href="https://pay.kiwify.com.br/GmLoqDY" (data-checkout).
+                               O app.js repassa utm_* e src da URL da página para o checkout.
+     3) UTMs ................. padrão em 03-trafego/utms.md. Variações de headline: ?hl=a | ?hl=b | ?hl=c
+                               (use utm_content=hl_b / hl_c; sem parâmetro = A).
+     4) ISCA (Capítulo 1) .... <form data-isca action="[LINK_FORM_ISCA]"> (ferramenta de e-mail do CEO)
+     5) DADOS LEGAIS ......... O Recomeço Financeiro, [CNPJ/CPF], [E-MAIL DE SUPORTE], links de política (rodapé)
+     ============================================================ -->
+
+<!-- PIXEL META (ativo) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1822142235459212');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1822142235459212&ev=PageView&noscript=1"></noscript>
+<!-- Eventos já ligados no app.js (window.track): ViewContent (carregou), Lead (isca), ClickComprar, evento personalizado, para não duplicar o InitiateCheckout da Kiwify (clique em qualquer botão de compra). Purchase = página de obrigado da Kiwify. -->
+<!-- GOOGLE TAG (opcional; só depois de conferir a política de serviços de dívida do Google) -->
+</head>
+<body>
+
+<div class="progresso" aria-hidden="true"><i></i></div>
+
+<div class="topo" role="note">
+  <span>Compra segura pela Kiwify</span><span class="sep">·</span><span>Garantia de 7 dias</span><span class="sep">·</span><a href="#teste">Leia o Capítulo 1 grátis</a>
+</div>
+
+<main>
+
+<!-- ============ 1 · HERO ============ -->
+<section class="hero" id="topo">
+  <div class="aurora" aria-hidden="true"><i class="a1"></i><i class="a2"></i><i class="a3"></i></div>
+  <div class="luz-mouse" aria-hidden="true"></div>
+  <div class="grao" aria-hidden="true"></div>
+  <div class="barras" id="barras" aria-hidden="true"></div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-txt">
+      <p class="etiqueta" data-hero>EBOOK · PLANO DE 30 DIAS · PDF</p>
+      <h1 id="h1" class="h1"><span class="split">Negociar é o quarto passo.</span> <span class="split dim">Em 30 dias, você faz os três primeiros.</span></h1>
+      <p class="sub" id="sub" data-hero>Um mapa das suas contas, um orçamento que cabe no mês e um roteiro de negociação, com uma tarefa de cerca de 10 minutos por dia.</p>
+      <div class="cta-bloco" data-hero>
+        <a class="btn" href="https://pay.kiwify.com.br/GmLoqDY" data-checkout data-pos="hero">
+          <span class="btn-t">Quero começar o plano de 30 dias</span>
+          <span class="btn-s">R$ 29,90 · pagamento único</span>
+          <i class="btn-brilho" aria-hidden="true"></i>
+        </a>
+        <a class="link-sec" href="#teste" data-pos="hero-isca">Prefiro ler o Capítulo 1 grátis antes <span aria-hidden="true">→</span></a>
+      </div>
+      <ul class="confia" data-hero>
+        <li>Garantia incondicional de 7 dias</li><li>Compra segura pela Kiwify</li><li>Acesso por e-mail na hora</li>
+      </ul>
+      <p class="apoio" id="apoio" data-hero>Uma tarefa por dia · fichas e checklist para imprimir · 31 fontes oficiais · 7 dias de garantia</p>
+    </div>
+
+    <div class="hero-visual" data-hero-visual>
+      <div class="halo" aria-hidden="true"></div>
+      <div class="livro-cena">
+        <div class="livro" id="livro">
+          <img src="img/livro.webp" width="900" height="1402" alt="Ebook Do Vermelho ao Controle: capa com gráfico de 30 barras, do vermelho ao verde" fetchpriority="high" decoding="async">
+          <div class="brilho-mask" aria-hidden="true"><i></i></div>
+        </div>
+        <div class="chip chip-1" aria-hidden="true"><b>Dia 1</b><span>10 minutos</span></div>
+        <div class="chip chip-2" aria-hidden="true"><b>Dia 26</b><span>Formalizar com segurança</span></div>
+      </div>
+      <p class="selo-hipo">Exemplos com valores hipotéticos</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 · FAIXA DE FATOS ============ -->
+<section class="fatos" aria-label="Em números">
+  <div class="wrap fatos-grid">
+    <div class="fato"><b class="num" data-to="30" data-pre="">30</b><span>dias, uma tarefa por dia</span></div>
+    <div class="fato"><b class="num" data-to="10" data-pre="~" data-suf=" min">~10 min</b><span>na maior parte dos dias (os dias de 20-30 min estão marcados)</span></div>
+    <div class="fato"><b class="num" data-to="31" data-pre="">31</b><span>fontes oficiais e de pesquisa listadas</span></div>
+    <div class="fato"><b class="num" data-to="7" data-pre="">7</b><span>dias de garantia: devolvemos 100%, sem perguntas</span></div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-trilho">
+      <span>Mapa das contas</span><span>Orçamento que cabe no mês</span><span>Roteiro de negociação</span><span>Uma tarefa por dia</span><span>8 fichas para imprimir</span><span>Scripts de negociação</span><span>Checklist de 1 página</span><span>31 fontes oficiais</span><span>7 dias de garantia</span>
+      <span>Mapa das contas</span><span>Orçamento que cabe no mês</span><span>Roteiro de negociação</span><span>Uma tarefa por dia</span><span>8 fichas para imprimir</span><span>Scripts de negociação</span><span>Checklist de 1 página</span><span>31 fontes oficiais</span><span>7 dias de garantia</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 · IDENTIFICAÇÃO ============ -->
+<section class="sec escura" id="dor">
+  <div class="wrap estreito">
+    <h2 class="h2" data-r>Você abre o aplicativo do banco e fecha de novo?</h2>
+    <blockquote class="citacao" data-r>Chega a notificação da fatura. O dedo vai até o aplicativo. E, antes de ver o valor, o dedo volta.</blockquote>
+    <div class="texto" data-r>
+      <p>Se isso soa familiar, <strong>não é preguiça nem falta de caráter</strong>. É um comportamento conhecido: quando esperamos uma má notícia, tendemos a evitar a informação (o "efeito avestruz") <sup class="fn"><a href="#notas">F24</a></sup>. Olhar dói. Não olhar alivia, por um dia.</p>
+      <p>O problema é o preço desse alívio. Sem olhar, ninguém sabe <strong>quanto deve, a quem, com que juros e há quanto tempo</strong>. E sem essas respostas, qualquer conversa com um credor acontece no escuro.</p>
+    </div>
+    <p class="rotulo" data-r>Perguntas que muita gente faz na internet</p>
+    <ul class="buscas">
+      <li data-r><span>Por onde começar quando as dívidas saem do controle?</span></li>
+      <li data-r><span>Estou com muitas dívidas: qual devo pagar primeiro?</span></li>
+      <li data-r><span>Não tenho como pagar minhas dívidas: o que fazer agora?</span></li>
+      <li data-r><span>Como negociar dívidas pela internet?</span></li>
+    </ul>
+    <p class="nota-mono" data-r>Títulos de páginas públicas que respondem a buscas reais; texto literal.</p>
+    <p class="gancho" data-r>Quase todas as respostas começam com a mesma palavra: "negocie". E é aí que mora o erro mais caro.</p>
+  </div>
+</section>
+
+<!-- ============ 4 · MECANISMO DO PROBLEMA ============ -->
+<section class="sec clara" id="escuro">
+  <div class="wrap">
+    <div class="cab-sec" data-r>
+      <h2 class="h2">O erro mais caro acontece antes da ligação.</h2>
+      <p class="lead">Imagine duas situações hipotéticas. A oferta é a mesma: <em>"Só hoje: 12 parcelas de R$ 250."</em></p>
+    </div>
+    <div class="duelo">
+      <article class="duelo-c sem" data-r>
+        <p class="duelo-t">Sem mapa</p>
+        <p>Não sabe se R$ 250 cabe no mês. Não sabe o total a pagar. Aceita, porque o alívio é imediato.</p>
+        <p class="duelo-fim">Três meses depois, a parcela não cabe e vira novo atraso.</p>
+      </article>
+      <article class="duelo-c com" data-r>
+        <p class="duelo-t">Com mapa e teto</p>
+        <p>Sabe quanto sobra por mês e qual é o seu teto. Responde: <em>"Preciso do valor total, do número de parcelas e das condições por escrito. Retorno amanhã."</em></p>
+        <p class="duelo-fim">Compara, decide com calma e só fecha o que cabe.</p>
+      </article>
+    </div>
+    <p class="nota-mono escuro-txt" data-r>Exemplo hipotético, sem relação com nenhuma pessoa real.</p>
+
+    <div class="custos">
+      <p class="lead" data-r>A diferença não é esperteza. É <strong>informação organizada</strong>. Quem negocia sem ela costuma:</p>
+      <ol class="custos-l">
+        <li data-r><b>1</b><p><strong>Aceitar a parcela que não cabe</strong>, e o acordo vira novo atraso.</p></li>
+        <li data-r><b>2</b><p><strong>Priorizar pelo barulho, não pelo risco</strong>: quem liga mais não é necessariamente a conta que mais pesa.</p></li>
+        <li data-r><b>3</b><p><strong>Pagar mais juros do que o necessário</strong>: R$ 1.000 a 8% ao mês viram cerca de <strong>R$ 1.260 em três meses</strong> (1.000 × 1,08 × 1,08 × 1,08). É aritmética, não previsão para o seu caso; mostra por que o número importa.</p></li>
+      </ol>
+    </div>
+
+    <div class="tamanho" data-r>
+      <p class="rotulo">O tamanho do assunto</p>
+      <div class="tamanho-g">
+        <div><b class="num-g" data-to="82" data-suf="%">82%</b><span>das famílias brasileiras tinham algum tipo de dívida em julho de 2026, o maior patamar da série (CNC, via Agência Brasil) <sup class="fn"><a href="#notas">F1</a></sup></span></div>
+        <div><b class="num-g" data-to="83.9" data-dec="1" data-suf=" mi">83,9 mi</b><span>de inadimplentes contabilizados pela Serasa no mesmo mês <sup class="fn"><a href="#notas">F3</a></sup></span></div>
+      </div>
+      <p class="gancho-c">Esses números explicam por que o assunto vira notícia. Mas não ajudam a decidir o que fazer <strong>amanhã de manhã</strong>. Então qual é a ordem certa?</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5 · O MÉTODO ============ -->
+<section class="sec escura metodo" id="metodo">
+  <div class="aurora fixa" aria-hidden="true"><i class="a1"></i><i class="a2"></i></div>
+  <div class="wrap">
+    <div class="cab-sec" data-r>
+      <p class="etiqueta">Método Mapa → Orçamento → Acordo</p>
+      <h2 class="h2">Por isso a negociação só começa no dia 22. Antes, você faz os três primeiros passos.</h2>
+    </div>
+
+    <div class="trilha" id="trilha" aria-hidden="true">
+      <div class="trilha-celulas"></div>
+      <div class="trilha-leg"><span style="--w:7">Mapa</span><span style="--w:7">Orçamento</span><span style="--w:7">Ordem</span><span class="ac" style="--w:7">Acordo</span><span style="--w:2">Fim</span></div>
+    </div>
+
+    <div class="etapas">
+      <article class="etapa vidro" data-r><p class="dias">Dias 1 a 7</p><h3>1. Mapa</h3><p>Uma folha com todas as contas: credor, valor, parcela, atraso e juros, inclusive as "invisíveis" (luz, condomínio, dívidas com pessoas)</p></article>
+      <article class="etapa vidro" data-r><p class="dias">Dias 8 a 14</p><h3>2. Orçamento</h3><p>Renda real, gastos reais e a <strong>margem</strong> do mês: o seu teto de parcela</p></article>
+      <article class="etapa vidro" data-r><p class="dias">Dias 15 a 21</p><h3>3. Ordem</h3><p>O que vem primeiro (3 níveis; avalanche ou bola de neve) e o teto de cada credor</p></article>
+      <article class="etapa vidro destaque" data-r><p class="dias">Dias 22 a 28</p><h3>4. Acordo</h3><p>Negociação com roteiro de 6 passos, propostas comparadas por uma régua única, tudo por escrito</p></article>
+      <article class="etapa vidro fecha" data-r><p class="dias">Dias 29 e 30</p><h3>Fechamento</h3><p>Conferência das baixas, revisão do mês e plano dos próximos 90 dias</p></article>
+    </div>
+
+    <div class="porque">
+      <h3 class="h3" data-r>Por que isso funciona como método (e não como milagre)</h3>
+      <ul class="porque-l">
+        <li data-r><strong>Uma tarefa curta por dia</strong>, com tempo estimado. Se der branco, o texto diz exatamente o que fazer.</li>
+        <li data-r><strong>Um dia perdido não derruba o plano</strong>: você retoma na tarefa em que parou <sup class="fn"><a href="#notas">F28</a></sup>.</li>
+        <li data-r><strong>Sem culpa e sem vergonha</strong>: o trabalho é <em>ver</em>, não se punir.</li>
+        <li data-r><strong>Fontes oficiais em cada passo</strong>: Meu BC (Banco Central), Serasa, Código de Defesa do Consumidor, tribunais, consumidor.gov.br, Procon e Defensoria.</li>
+      </ul>
+    </div>
+
+    <div class="calc vidro" id="calc" data-r>
+      <div class="calc-txt">
+        <p class="rotulo">Faça agora · 10 minutos, sem comprar nada</p>
+        <p>Escreva 3 números numa folha: quanto entra por mês, quanto sai de gasto que não dá para evitar e quantas contas em aberto você lembra. Subtraia o segundo do primeiro. Se der positivo, existe margem para trabalhar. Se der zero ou negativo, é informação, não sentença. Essa é a "linha de partida" do plano.</p>
+      </div>
+      <form class="calc-form" onsubmit="return false" autocomplete="off">
+        <label>Quanto entra por mês<span class="campo"><i>R$</i><input id="c-ent" inputmode="numeric" placeholder="0" aria-label="Quanto entra por mês, em reais"></span></label>
+        <label>Quanto sai de essencial<span class="campo"><i>R$</i><input id="c-sai" inputmode="numeric" placeholder="0" aria-label="Quanto sai de essencial, em reais"></span></label>
+        <p class="calc-res" id="c-res" aria-live="polite">Sua margem aproximada: <b>R$ ___</b></p>
+        <p class="calc-peq">O plano de 30 dias descobre o tamanho real dela. Roda só no seu navegador: não envia nem guarda dados.</p>
+      </form>
+    </div>
+
+    <div class="cta-linha" data-r>
+      <a class="btn" href="https://pay.kiwify.com.br/GmLoqDY" data-checkout data-pos="metodo"><span class="btn-t">Quero o plano completo, dia por dia</span><span class="btn-s">R$ 29,90 · 7 dias de garantia</span><i class="btn-brilho" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6 · UM DIA POR DENTRO ============ -->
+<section class="sec clara papel-sec" id="dia">
+  <div class="wrap">
+    <div class="cab-sec" data-r>
+      <p class="etiqueta cl">Amostra do produto</p>
+      <h2 class="h2">Assim é um dia do plano.</h2>
+    </div>
+    <div class="dias-g">
+      <article class="folha" data-r><div class="folha-topo"><b>1</b><span>Dia · 10 minutos</span></div><p>Pegue uma folha. Escreva tudo o que lembra de dever, <strong>sem valores</strong>. Pare quando o cronômetro tocar.</p></article>
+      <article class="folha" data-r><div class="folha-topo"><b>13</b><span>Dia · 15 minutos</span></div><p>Calcule a <strong>margem mensal</strong>: renda real menos essenciais, menos ajustáveis mantidos, menos um pequeno colchão. Esse número será o seu teto em qualquer negociação.</p></article>
+      <article class="folha" data-r><div class="folha-topo"><b>26</b><span>Dia · 20 minutos · Formalizar com segurança</span></div><p>Confirme o acordo <strong>por escrito</strong>, com valores, datas e número de protocolo. Antes de pagar qualquer boleto ou Pix, confira: o beneficiário é o credor real? Valor e vencimento batem com o combinado? A oferta chegou por um canal oficial que <strong>você</strong> abriu?</p></article>
+    </div>
+    <p class="gancho dk" data-r>São 30 dias assim. Veja tudo o que vem junto.</p>
+  </div>
+</section>
+
+<!-- ============ 7 · O QUE TEM DENTRO ============ -->
+<section class="sec escura" id="conteudo">
+  <div class="wrap">
+    <div class="cab-sec" data-r><h2 class="h2">O que você leva no guia</h2></div>
+
+    <div class="leque" id="leque" aria-label="Páginas reais do ebook">
+      <figure class="pg p1"><img src="img/pag-cap1.webp" width="560" height="840" loading="lazy" alt="Página real do ebook: abertura do capítulo 1"></figure>
+      <figure class="pg p2"><img src="img/pag-mapa.webp" width="560" height="840" loading="lazy" alt="Página real do ebook: semana 1, o mapa das contas"></figure>
+      <figure class="pg p3"><img src="img/pag-dia17.webp" width="560" height="840" loading="lazy" alt="Página real do ebook: dia 17, escolher a estratégia"></figure>
+      <figure class="pg p4"><img src="img/pag-desenrola.webp" width="560" height="840" loading="lazy" alt="Página real do ebook: quadro dos programas do governo"></figure>
+      <figure class="pg p5"><img src="img/pag-grade.webp" width="560" height="840" loading="lazy" alt="Página real do ebook: grade dos 30 dias para marcar"></figure>
+    </div>
+    <p class="nota-mono centro" data-r>Páginas reais do PDF.</p>
+
+    <div class="bento">
+      <article class="b b-intro vidro" data-r><p class="b-k">Introdução</p><h3>Faça os 3 números em 10 minutos</h3><p>e entenda a ordem do plano.</p></article>
+      <article class="b b-s vidro" data-r><p class="b-k">Cap. 1</p><h3>Por que negociar no escuro custa caro</h3><p>os três custos e o que o método muda.</p></article>
+      <article class="b b-s vidro" data-r><p class="b-k">Cap. 2</p><h3>As regras do jogo</h3><p>seu kit e 5 regras para cumprir 10 minutos por dia, inclusive nos dias ruins.</p></article>
+
+      <article class="b b-sem vidro" data-r><p class="b-k">Cap. 3 · Semana 1 · dias 1 a 7</p><h3>Tenha todas as contas numa folha</h3><p>consultando fontes oficiais.</p></article>
+      <article class="b b-sem vidro" data-r><p class="b-k">Cap. 4 · Semana 2 · dias 8 a 14</p><h3>Descubra sua renda real e a margem mensal</h3><p>com um pente-fino sem sofrimento.</p></article>
+      <article class="b b-sem vidro" data-r><p class="b-k">Cap. 5 · Semana 3 · dias 15 a 21</p><h3>Defina o que pagar primeiro</h3><p>o <strong>teto</strong> por credor e as três frases para abrir a conversa.</p></article>
+      <article class="b b-sem vidro dest" data-r><p class="b-k">Cap. 7 · Semana 4 · dias 22 a 28</p><h3>Negocie com roteiro de 6 passos</h3><p>compare propostas e formalize com segurança.</p></article>
+
+      <article class="b b-s vidro" data-r><p class="b-k">Cap. 6</p><h3>Direitos e canais oficiais</h3><p>cobrança, cadastros, juros, prescrição, superendividamento e a situação dos programas do governo (conferida em 30/09/2026).</p></article>
+      <article class="b b-s vidro" data-r><p class="b-k">Cap. 8</p><h3>Golpes e armadilhas</h3><p>falso boleto, "taxa para liberar", link por mensagem.</p></article>
+      <article class="b b-s vidro" data-r><p class="b-k">Cap. 9 · dias 29 e 30</p><h3>Confira as baixas, feche o mês</h3><p>planeje os próximos 90 dias.</p></article>
+      <article class="b b-s vidro" data-r><p class="b-k">Cap. 10</p><h3>Hábitos</h3><p>reunião semanal de 15 minutos, dia do pagamento, regra do cartão.</p></article>
+      <article class="b b-s vidro" data-r><p class="b-k">Cap. 11</p><h3>Erros comuns e plano de recaída</h3><p>em 5 passos.</p></article>
+      <article class="b b-fichas vidro" data-r><p class="b-k">Para imprimir ou copiar</p><h3><span class="num-g sm" data-to="8">8</span> fichas</h3><p>ficha da conta, mapa, orçamento, registro de contatos, comparador de propostas, calendário, revisão semanal e grade de 30 dias.</p></article>
+    </div>
+
+    <div class="cta-linha" data-r>
+      <a class="btn" href="https://pay.kiwify.com.br/GmLoqDY" data-checkout data-pos="conteudo"><span class="btn-t">Quero o mapa, o orçamento e o roteiro</span><span class="btn-s">R$ 29,90 · pagamento único</span><i class="btn-brilho" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8 · TESTE GRÁTIS ============ -->
+<section class="sec convite" id="teste">
+  <div class="wrap">
+    <div class="convite-c vidro" data-r>
+      <div class="convite-txt">
+        <h2 class="h2 m">Não quer comprar sem ver? Leia o começo de graça.</h2>
+        <p>Baixe a <strong>Introdução, o Capítulo 1 e o Checklist de 1 página</strong>. Você faz os "3 números" e vê o jeito de escrever do guia antes de decidir. Sem cartão, sem compromisso.</p>
+        <!-- ISCA: ligar este formulário à ferramenta de e-mail do CEO. Trocar action="[LINK_FORM_ISCA]". Evento Lead no app.js. Conferir LGPD (política de privacidade e consentimento). -->
+        <form class="isca" data-isca action="[LINK_FORM_ISCA]" method="post">
+          <label class="sr" for="email">Seu melhor e-mail</label>
+          <input id="email" name="email" type="email" required placeholder="seu melhor e-mail" autocomplete="email">
+          <button class="btn btn-claro" type="submit"><span class="btn-t">Receber o Capítulo 1 grátis</span></button>
+        </form>
+        <p class="micro">Conteúdo educativo. Você receberá também alguns e-mails sobre o guia completo; cancele quando quiser. Não pedimos senha, token nem dados bancários.</p>
+      </div>
+      <div class="convite-img" aria-hidden="true"><img src="img/capa.webp" width="640" height="1024" loading="lazy" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9 · PARA QUEM É ============ -->
+<section class="sec clara" id="paraquem">
+  <div class="wrap">
+    <div class="cab-sec" data-r><h2 class="h2">Este guia é para você se...</h2></div>
+    <div class="duas">
+      <article class="col sim" data-r>
+        <h3>É para você se:</h3>
+        <ul>
+          <li>quer <strong>ver o quadro completo</strong> das suas contas antes de decidir qualquer coisa;</li>
+          <li>prefere <strong>uma tarefa curta por dia</strong> a um curso longo;</li>
+          <li>quer <strong>negociar com números</strong> (teto, ordem, proposta por escrito) e não aceitar a primeira oferta;</li>
+          <li>tem medo de <strong>golpe</strong> e quer saber como conferir canal, boleto e Pix.</li>
+        </ul>
+      </article>
+      <article class="col nao" data-r>
+        <h3>Não é para você se:</h3>
+        <ul>
+          <li>espera que o ebook <strong>quite a dívida, limpe o nome ou consiga desconto</strong> por você (isso depende de acordo e pagamento com cada credor);</li>
+          <li>quer <strong>indicação de onde investir</strong> (o guia não trata de investimento);</li>
+          <li>precisa de <strong>orientação jurídica</strong> específica: se há ação na Justiça, citação ou intimação, procure a Defensoria Pública ou um advogado (o guia mostra quando);</li>
+          <li>busca <strong>aumentar renda</strong>: o guia organiza o que já entra, não promete renda.</li>
+        </ul>
+      </article>
+    </div>
+    <p class="nota-fim" data-r>Preferimos que você descubra isso agora a pedir reembolso depois.</p>
+  </div>
+</section>
+
+<!-- ============ 10 · PROCEDÊNCIA ============ -->
+<section class="sec escura" id="procedencia">
+  <div class="wrap">
+    <div class="cab-sec" data-r><h2 class="h2">Sem gurus e sem segredo: tudo o que está no guia tem fonte.</h2></div>
+    <p class="lead largo" data-r>Este guia foi escrito pela equipe editorial de <strong>O Recomeço Financeiro</strong>. <strong>Não somos banco, financeira, escritório de advocacia nem consultoria</strong>, e não negociamos nada em seu nome. O que fizemos: reunir fontes oficiais e estudos (Banco Central, Código de Defesa do Consumidor, tribunais, Ministério da Justiça, Serasa, pesquisa de comportamento) e transformar em tarefas curtas, dia após dia.</p>
+    <div class="selos">
+      <article class="selo vidro" data-r><b class="num-g sm" data-to="31">31</b><h3>fontes listadas</h3><p>31 fontes ao fim do guia; cada dado ou regra no texto traz o número da fonte.</p></article>
+      <article class="selo vidro" data-r><b class="num-g sm">30/09</b><h3>Conferido em 30/09/2026</h3><p>Leis, taxas e programas mudam: o guia diz quando conferir o site oficial.</p></article>
+      <article class="selo vidro" data-r><svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="9" y="6" width="26" height="32" rx="3" stroke-dasharray="3 3"/><path d="M15 16h14M15 22h14M15 28h8"/></svg><h3>Exemplos hipotéticos identificados</h3><p>Exemplos em reais são hipotéticos e assim identificados. Não são depoimentos.</p></article>
+      <article class="selo vidro" data-r><svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="22" cy="22" r="15"/><path d="M11.4 32.6 32.6 11.4"/></svg><h3>Nunca pedimos senha, token ou pagamento antecipado</h3><p>E o guia ensina a reconhecer quem pede.</p></article>
+    </div>
+    <div class="prova vidro" data-r>
+      <p>Este é um guia novo. Por isso, em vez de depoimentos, você vê o que dá para verificar: <strong>leia o Capítulo 1 grátis</strong>, <strong>confira as fontes</strong>, <strong>teste por 7 dias com devolução total</strong>. Só publicamos depoimentos reais, com autorização.</p>
+      <!-- Quando houver depoimentos REAIS com autorização, substituir este parágrafo pelo bloco A da copy ([DEPOIMENTO REAL AQUI]). Nunca inventar. -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 · BÔNUS ============ -->
+<section class="sec escura2" id="bonus">
+  <div class="aurora fixa" aria-hidden="true"><i class="a1"></i></div>
+  <div class="wrap">
+    <div class="cab-sec" data-r>
+      <h2 class="h2">Dois materiais para a hora da conversa. Já inclusos.</h2>
+      <p class="lead">Ler o método é uma coisa. Estar ao telefone, com pressa na voz do outro lado, é outra. Os bônus existem para esse momento.</p>
+    </div>
+    <div class="bonus">
+      <article class="bonus-c vidro" data-r>
+        <div class="doc doc-1" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="bonus-t"><p class="b-k">Bônus 1</p><h3>Scripts de negociação</h3>
+        <p>Frases prontas para <strong>telefone</strong>, <strong>chat/WhatsApp</strong> (só canal oficial) e <strong>e-mail</strong>, por nível de prioridade; respostas para as pressões mais comuns ("é só hoje", "pague por este link"); modelos de texto para <strong>pedir extrato e contrato</strong>, <strong>contestar</strong> uma cobrança, <strong>pedir a baixa</strong> do registro e <strong>pedir reajuste antes de atrasar</strong>. Sem promessa de desconto: a conversa é sobre perguntar, anotar, comparar e decidir.</p>
+        <p class="resolve"><em>Resolve:</em> "não sei o que dizer" e "tenho medo de aceitar o que não cabe".</p></div>
+      </article>
+      <article class="bonus-c vidro" data-r>
+        <div class="doc doc-2" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="bonus-t"><p class="b-k">Bônus 2</p><h3>Checklist de 1 página</h3>
+        <p>A <strong>grade dos 30 dias</strong> para marcar com X, os <strong>3 números</strong>, a <strong>fórmula da margem</strong>, os <strong>6 passos</strong> da negociação, as <strong>7 checagens</strong> antes de aceitar e os <strong>sinais de golpe</strong>. Para imprimir e colar onde você veja todo dia.</p>
+        <p class="resolve"><em>Resolve:</em> "começo animado e me perco".</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12 · OFERTA ============ -->
+<section class="sec escura oferta" id="oferta">
+  <div class="aurora fixa" aria-hidden="true"><i class="a1"></i><i class="a2"></i></div>
+  <div class="wrap estreito2">
+    <div class="cab-sec centro" data-r><h2 class="h2">O que você recebe hoje</h2></div>
+    <div class="oferta-card" data-r>
+      <div class="oferta-borda" aria-hidden="true"></div>
+      <div class="oferta-in">
+        <img class="oferta-img" src="img/combo.webp" width="1300" height="936" loading="lazy" alt="Ebook em livro, tablet e celular">
+        <table class="tabela">
+          <thead><tr><th>Você recebe</th><th>O que resolve</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Ebook "Do Vermelho ao Controle"</strong>: plano de 30 dias, 11 capítulos, exemplos, 8 fichas, 31 fontes</td><td>"Não sei por onde começar"</td></tr>
+            <tr><td><strong>Bônus 1 · Scripts de negociação</strong></td><td>"Não sei o que dizer"</td></tr>
+            <tr><td><strong>Bônus 2 · Checklist de 1 página</strong></td><td>"Esqueço o que fazer"</td></tr>
+            <tr><td><strong>Garantia de 7 dias</strong> com devolução de 100%</td><td>"E se eu não gostar?"</td></tr>
+          </tbody>
+        </table>
+        <div class="preco">
+          <p class="preco-v"><span>Preço</span><b>R$ <i class="preco-n">29,90</i></b></p>
+          <p class="preco-d">pagamento único · acesso por e-mail logo após a confirmação</p>
+          <!-- Confirmar parcelamento no cartão e Pix/boleto na Kiwify antes de publicar. -->
+        </div>
+        <a class="btn btn-g" href="https://pay.kiwify.com.br/GmLoqDY" data-checkout data-pos="oferta"><span class="btn-t">Quero o plano de 30 dias por R$ 29,90</span><i class="btn-brilho" aria-hidden="true"></i></a>
+        <p class="micro c">Compra segura pela Kiwify · Garantia de 7 dias · Acesso imediato por e-mail</p>
+      </div>
+    </div>
+    <div class="persp" data-r>
+      <p class="rotulo">Para colocar o preço em perspectiva</p>
+      <ul>
+        <li>Dividido pelos 30 dias do plano, são <strong>cerca de R$ 1 por dia</strong>.</li>
+        <li>Numa oferta hipotética de 12 parcelas de R$ 250 (total de R$ 3.000), o guia custa <strong>cerca de 1%</strong> desse valor, e serve justamente para você saber se a parcela cabe <strong>antes</strong> de aceitar.</li>
+        <li>Existe muito conteúdo gratuito sobre o assunto, e parte dele é bom (bancos, SPC e Serasa publicam guias). O que este guia acrescenta é a <strong>ordem em 30 dias, as fichas e os roteiros prontos</strong>, para você executar, não só ler.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13 · GARANTIA ============ -->
+<section class="sec escura garantia" id="garantia">
+  <div class="wrap">
+    <div class="gar vidro" data-r>
+      <div class="gar-selo" aria-hidden="true">
+        <svg viewBox="0 0 200 200" width="200" height="200"><defs><path id="circ" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs>
+          <circle cx="100" cy="100" r="96" fill="none" stroke="rgba(94,224,176,.45)" stroke-width="1"/>
+          <circle cx="100" cy="100" r="62" fill="none" stroke="rgba(94,224,176,.25)" stroke-width="1"/>
+          <g class="gar-anel"><text font-family="DM Mono,monospace" font-size="11.5" letter-spacing="3.2" fill="#A9BDBC"><textPath href="#circ" textLength="494" lengthAdjust="spacing">DEVOLUÇÃO DE 100% · SEM PERGUNTAS · ART. 49 CDC ·</textPath></text></g>
+          <text x="100" y="118" text-anchor="middle" font-family="DM Serif Display,serif" font-size="68" fill="#F4EFE4">7</text>
+          <text x="100" y="140" text-anchor="middle" font-family="DM Mono,monospace" font-size="12" letter-spacing="2" fill="#5EE0B0">DIAS</text>
+        </svg>
+      </div>
+      <div class="gar-txt">
+        <h2 class="h2 m">Leia, aplique e decida. 7&nbsp;dias para testar, sem risco.</h2>
+        <p>Faça os 3 números, leia o mapa e execute as primeiras tarefas. Se, por qualquer motivo, você não gostar, <strong>devolvemos 100% do valor pago em até 7 dias</strong>, sem perguntas. É o seu direito de arrependimento nas compras pela internet (art. 49 do Código de Defesa do Consumidor) <sup class="fn"><a href="#notas">F6</a></sup>, e a gente o trata como argumento, não como obstáculo.</p>
+        <p>Para pedir: responda o e-mail da compra ou use a central da Kiwify ou chame <a href="https://www.instagram.com/orecomeco.financeiro/" target="_blank" rel="noopener">@orecomeco.financeiro</a> no Instagram.<!-- EMAIL-SUPORTE: incluir quando o CEO criar --></p>
+        <p class="aviso-g">A garantia é de <strong>devolução do valor</strong>. <strong>Não é garantia de resultado</strong>: o guia é educativo e não promete quitar dívidas, conseguir desconto ou limpar o nome.</p>
+        <a class="btn" href="https://pay.kiwify.com.br/GmLoqDY" data-checkout data-pos="garantia"><span class="btn-t">Testar por 7 dias sem risco</span><i class="btn-brilho" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14 · FAQ ============ -->
+<section class="sec clara" id="faq">
+  <div class="wrap estreito">
+    <div class="cab-sec" data-r><h2 class="h2">Perguntas frequentes</h2></div>
+    <div class="faq">
+      <details data-r><summary>Um ebook quita dívida ou resolve a minha situação?</summary><div><p>Não. O guia <strong>não quita dívida, não limpa nome e não garante desconto</strong>: isso depende de acordo e pagamento com cada credor. O que ele faz é tirar você do escuro: um mapa, um orçamento e um roteiro, para decidir com números.</p></div></details>
+      <details data-r><summary>Já tentei me organizar e não consegui. Por que agora seria diferente?</summary><div><p>Porque o plano é feito para o pior dia, não para o melhor: tarefas de cerca de 10 minutos, <strong>um dia perdido não derruba o plano</strong> (você retoma onde parou) e o texto evita culpa. Criar hábito leva tempo variável (a média observada em um estudo foi de 66 dias, de 18 a 254) <sup class="fn"><a href="#notas">F28</a></sup>; por isso os passos são pequenos de propósito.</p></div></details>
+      <details data-r><summary>Não tenho tempo nem dinheiro. Dá para fazer?</summary><div><p>A maioria dos dias leva de 10 a 15 minutos. Alguns (consultar extratos, telefonar) pedem 20 ou 30 e estão marcados. Você só precisa de <strong>papel, caneta e celular</strong>. A planilha é opcional.</p></div></details>
+      <details data-r><summary>Isso é golpe? Como sei que posso confiar?</summary><div><p>Você pode conferir antes de pagar: há um <strong>capítulo grátis</strong> (<a href="#teste">leia aqui</a>), <strong>31 fontes</strong> listadas, <strong>7 dias de garantia</strong> e a compra é feita pela Kiwify. O guia <strong>nunca pede senha, token nem pagamento antecipado</strong> e ensina a identificar quem pede.</p></div></details>
+      <details data-r><summary>Vocês negociam por mim ou "limpam o nome"?</summary><div><p>Não. Não somos banco, financeira, escritório de advocacia nem consultoria, e <strong>não negociamos nada em seu nome</strong>. Desconfie de quem cobra para "limpar o nome" ou "garantir vaga": é um dos sinais de golpe que o capítulo 8 ensina a reconhecer <sup class="fn"><a href="#notas">F17</a></sup>.</p></div></details>
+      <details data-r><summary>Já tem muita coisa grátis na internet. Por que pagar R$ 29,90?</summary><div><p>Tem, e parte é boa. Mas conteúdo solto não vem em <strong>ordem</strong>, nem com tarefa para cada dia, fichas prontas e roteiros de conversa. Se você prefere montar tudo sozinho, a amostra grátis mostra o começo. Se prefere o caminho pronto em 30 dias, é para isso que o guia existe.</p></div></details>
+      <details data-r><summary>E o Desenrola? Posso contar com desconto do governo?</summary><div><p>O guia traz um quadro com a <strong>situação dos programas em 30/09/2026</strong>: o Novo Desenrola Brasil <strong>encerrou em 31/08/2026</strong>; o Desenrola 3.0 tem cronograma próprio (propostas dos credores em nov/dez de 2026 e repasse a partir de fev/2027, sujeito a mudança por ser medida provisória) <sup class="fn"><a href="#notas">F18</a></sup><sup class="fn"><a href="#notas">F19</a></sup>. <strong>Não conte com desconto que ainda não foi oficializado para você.</strong> Confira sempre os canais oficiais.</p></div></details>
+      <details data-r><summary>E se a conta simplesmente não fechar, mesmo cortando gastos?</summary><div><p>Isso acontece e não é sentença. O capítulo 6 explica o procedimento de <strong>superendividamento</strong> (Lei 14.181/2021): audiência de conciliação com os credores e plano de pagamento de até cinco anos, preservando o mínimo existencial <sup class="fn"><a href="#notas">F8</a></sup>. A porta de entrada costuma ser o <strong>Procon</strong> ou a <strong>Defensoria Pública</strong>, gratuitos <sup class="fn"><a href="#notas">F22</a></sup>. Você leva o Mapa e o Orçamento que fez no plano.</p></div></details>
+      <details data-r><summary>Qual conta pago primeiro?</summary><div><p>O guia usa três níveis: <strong>1) essencial ou risco imediato</strong> (moradia, luz, água, gás, dívida com garantia, o que está na Justiça), <strong>2) caras</strong> (cartão no rotativo, cheque especial), <strong>3) demais</strong>. Dentro disso, você escolhe <strong>avalanche</strong> (maior juros primeiro) ou <strong>bola de neve</strong> (menor saldo primeiro); a melhor é a que você consegue manter <sup class="fn"><a href="#notas">F27</a></sup>.</p></div></details>
+      <details data-r><summary>Minha renda varia (autônomo, MEI, bicos). Serve?</summary><div><p>O plano usa o <strong>menor valor dos últimos três meses</strong> para a parte que varia, justamente para o orçamento não depender de um mês bom. Se a renda for muito irregular, o resultado do dia 13 será mais conservador, e isso é proposital.</p></div></details>
+      <details data-r><summary>Posso fazer tudo no celular? Preciso da planilha?</summary><div><p>O ebook é um PDF leve que abre no celular. As <strong>8 fichas</strong> funcionam impressas ou copiadas num caderno. A planilha (opcional, oferecida no checkout) calcula margem, ordem e propostas, mas <strong>não é obrigatória</strong>.</p></div></details>
+      <details data-r><summary>Como recebo o guia e como peço reembolso?</summary><div><p>Você recebe o acesso por e-mail logo após a confirmação do pagamento (ebook + bônus). Para reembolso, dentro de 7 dias, responda o e-mail da compra ou use a central da Kiwify. Devolvemos 100% do valor.</p></div></details>
+    </div>
+    <p class="gancho dk" data-r>Ainda com dúvida? <a href="#teste">Leia o Capítulo 1 grátis</a> ou comece agora.</p>
+  </div>
+</section>
+
+<!-- ============ 15 · CTA FINAL ============ -->
+<section class="final" id="final">
+  <div class="aurora fixa" aria-hidden="true"><i class="a1"></i><i class="a2"></i></div>
+  <div class="barras fim" id="barras-fim" aria-hidden="true"></div>
+  <div class="wrap estreito2 centro">
+    <h2 class="h2 g" data-r>Um dia de cada vez. O primeiro custa 10 minutos.</h2>
+    <p class="lead" data-r>Em 30 dias, você pode ter um <strong>mapa</strong> de tudo, um <strong>orçamento que cabe no mês</strong> e um <strong>roteiro para negociar</strong> sem aceitar a primeira parcela que aparecer. Sem prometer milagre: só colocando as coisas <strong>na ordem certa</strong>.</p>
+    <ul class="final-l" data-r>
+      <li>Ebook <strong>Do Vermelho ao Controle</strong> + Scripts de negociação + Checklist de 1 página</li>
+      <li><strong>R$ 29,90</strong> · pagamento único · <strong>7 dias de garantia</strong></li>
+    </ul>
+    <div data-r><a class="btn btn-g" href="https://pay.kiwify.com.br/GmLoqDY" data-checkout data-pos="final"><span class="btn-t">Começar meu Dia 1 hoje · R$ 29,90</span><i class="btn-brilho" aria-hidden="true"></i></a></div>
+    <p class="link-fim" data-r>Ainda em dúvida? <a href="#teste">Ler o Capítulo 1 grátis →</a></p>
+    <p class="custo" data-r>Cada semana sem mapa é mais uma semana de decisões no escuro, sem saber quanto os juros estão custando.</p>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <p class="rod-id"><strong>O Recomeço Financeiro</strong> · Responsável: Victor H. R. · Pagamento processado pela Kiwify · Dúvidas: <a href="https://www.instagram.com/orecomeco.financeiro/" target="_blank" rel="noopener">@orecomeco.financeiro</a> no Instagram<!-- EMAIL-SUPORTE: incluir quando o CEO criar --></p>
+    <p class="rod-links"><a href="[LINK_POLITICA_PRIVACIDADE]">Política de privacidade</a> · <a href="[LINK_TERMOS_DE_USO]">Termos de uso</a> · <a href="[LINK_POLITICA_REEMBOLSO]">Política de reembolso (7 dias)</a></p>
+    <p class="aviso"><strong>Aviso.</strong> Este conteúdo é <strong>educativo</strong> e <strong>não substitui</strong> a orientação de um profissional de finanças, de um advogado, da Defensoria Pública ou do Procon. <strong>Não é consultoria financeira, jurídica nem de crédito.</strong> Não há garantia de resultado, quitação, desconto, redução de juros nem "nome limpo". Leis, taxas e programas do governo mudam: confira sempre a regra atual no site oficial. Os valores em reais dos exemplos são hipotéticos. Este site não é afiliado a nenhum banco, ao governo, ao Serasa ou a qualquer órgão público. A compra é processada pela Kiwify.</p>
+    <details class="notas" id="notas">
+      <summary>Notas e fontes citadas nesta página</summary>
+      <ol>
+        <li><b>F1</b> · CNC, Pesquisa de Endividamento e Inadimplência (PEIC), dados de julho/2026, via Agência Brasil (ago/2026)</li>
+        <li><b>F3</b> · Serasa, comunicado à imprensa sobre inadimplência (ago/2026)</li>
+        <li><b>F6</b> · Código de Defesa do Consumidor, art. 49 (direito de arrependimento), via MPCE</li>
+        <li><b>F8</b> · Código de Defesa do Consumidor, arts. 54-A e 104-A a 104-C (Lei 14.181/2021, superendividamento)</li>
+        <li><b>F17</b> · Serasa, "Como negociar dívidas pela internet: guia completo"</li>
+        <li><b>F18</b> · Novo Desenrola Brasil (MP 1.355/2026), Brasil 61 e Jornal do Brasil (mai–ago/2026)</li>
+        <li><b>F19</b> · Desenrola Brasil 3.0 (MP 1.393/2026), Senado Notícias (28/09/2026) e Brasil de Fato (26/09/2026)</li>
+        <li><b>F22</b> · Procon e Defensoria Pública, atendimento gratuito (Idec; Procon-SP)</li>
+        <li><b>F24</b> · Karlsson, Loewenstein e Seppi (2009), "The ostrich effect", Journal of Risk and Uncertainty</li>
+        <li><b>F27</b> · Federal Reserve Bank of St. Louis (2023), "What Is the Best Strategy for Paying Off Credit Card Debt?"</li>
+        <li><b>F28</b> · Lally et al. (2010), "How are habits formed", European Journal of Social Psychology</li>
+      </ol>
+      <p>A lista completa, com 31 fontes, está ao fim do ebook.</p>
+    </details>
+  </div>
+</footer>
+
+<!-- Barra fixa no celular (aparece depois do hero; some na oferta) -->
+<div class="barra-fixa" id="barra-fixa" aria-hidden="true">
+  <span>Plano de 30 dias · <b>R$ 29,90</b></span>
+  <a class="btn btn-p" href="https://pay.kiwify.com.br/GmLoqDY" data-checkout data-pos="barra-fixa" tabindex="-1"><span class="btn-t">Quero começar</span></a>
+</div>
+
+<script src="js/gsap.min.js" defer></script>
+<script src="js/ScrollTrigger.min.js" defer></script>
+<script src="js/lenis.min.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
