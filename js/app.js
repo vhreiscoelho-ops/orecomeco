@@ -23,15 +23,15 @@
 
   /* ---------- variações de headline (texto da copy-vendas.md) ---------- */
   var HL = {
-    a: null,
+    a: { h: ['Negociar é o quarto passo.', 'Em 30 dias, você faz os três primeiros.'],
+         sub: 'Um mapa das suas contas, um orçamento que cabe no mês e um roteiro de negociação, com uma tarefa de cerca de 10 minutos por dia.',
+         apoio: 'Uma tarefa por dia · fichas e checklist para imprimir · 31 fontes oficiais · 7 dias de garantia' },
     b: { h: ['Em 30 dias: o mapa das suas contas, o orçamento que cabe no mês e um roteiro para negociar.'],
          sub: 'O plano dia a dia em PDF, para quem quer decidir com números antes de aceitar a primeira proposta. Cerca de 10 minutos por dia.',
          apoio: 'Do Vermelho ao Controle · 11 capítulos · 8 fichas · 2 bônus · garantia de 7 dias' },
-    c: { h: ['"Não sei nem quanto devo."', 'Em 30 dias, essa frase vira um mapa, um orçamento e um roteiro.'],
-         sub: 'Sem culpa e sem milagre: uma tarefa de cerca de 10 minutos por dia, na ordem certa, para você parar de negociar no escuro.',
-         apoio: 'Papel e caneta bastam · um dia perdido não derruba o plano · garantia de 7 dias' }
+    c: null /* padrão (HTML): identificação/alívio, ICP */
   };
-  var v = HL[(q.get('hl') || 'a').toLowerCase()];
+  var v = HL[(q.get('hl') || 'c').toLowerCase()];
   if (v) {
     $('#h1').innerHTML = v.h.map(function (t, i) { return '<span class="split' + (i ? ' dim' : '') + '">' + t + '</span>'; }).join(' ');
     $('#sub').textContent = v.sub; $('#apoio').textContent = v.apoio;

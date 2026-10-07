@@ -26,9 +26,9 @@
      2) CHECKOUT KIWIFY ...... todos os botões usam href="https://pay.kiwify.com.br/GmLoqDY" (data-checkout).
                                O app.js repassa utm_* e src da URL da página para o checkout.
      3) UTMs ................. padrão em 03-trafego/utms.md. Variações de headline: ?hl=a | ?hl=b | ?hl=c
-                               (use utm_content=hl_b / hl_c; sem parâmetro = A).
+                               (use utm_content=hl_a / hl_b / hl_c; SEM parâmetro = C, identificação/alívio, desde 07/10/2026 por causa do ICP; A = mecanismo, só com ?hl=a).
      4) ISCA (Capítulo 1) .... <form data-isca action="[LINK_FORM_ISCA]"> (ferramenta de e-mail do CEO)
-     5) DADOS LEGAIS ......... O Recomeço Financeiro, [CNPJ/CPF], [E-MAIL DE SUPORTE], links de política (rodapé)
+     5) DADOS LEGAIS ......... O Recomeço Financeiro, [CNPJ/CPF], e-mail de suporte já preenchido (bloco da garantia e rodapé), links de política (rodapé)
      ============================================================ -->
 
 <!-- PIXEL META (ativo) -->
@@ -60,12 +60,12 @@ fbq('init','1822142235459212');fbq('track','PageView');
   <div class="wrap hero-grid">
     <div class="hero-txt">
       <p class="etiqueta" data-hero>EBOOK · PLANO DE 30 DIAS · PDF</p>
-      <h1 id="h1" class="h1"><span class="split">Negociar é o quarto passo.</span> <span class="split dim">Em 30 dias, você faz os três primeiros.</span></h1>
-      <p class="sub" id="sub" data-hero>Um mapa das suas contas, um orçamento que cabe no mês e um roteiro de negociação, com uma tarefa de cerca de 10 minutos por dia.</p>
+      <h1 id="h1" class="h1"><span class="split">"Não sei nem quanto devo."</span> <span class="split dim">Em 30 dias, essa frase vira um mapa, um orçamento e um roteiro.</span></h1>
+      <p class="sub" id="sub" data-hero>Sem culpa e sem milagre: uma tarefa de cerca de 10 minutos por dia, na ordem certa, para você parar de negociar no escuro.</p>
       <div class="cta-bloco" data-hero>
         <a class="btn" href="https://pay.kiwify.com.br/GmLoqDY" data-checkout data-pos="hero">
           <span class="btn-t">Quero começar o plano de 30 dias</span>
-          <span class="btn-s">R$ 29,90 · pagamento único</span>
+          <span class="btn-s">R$ 29,90 · Pix ou cartão</span>
           <i class="btn-brilho" aria-hidden="true"></i>
         </a>
         <a class="link-sec" href="#teste" data-pos="hero-isca">Prefiro ler o Capítulo 1 grátis antes <span aria-hidden="true">→</span></a>
@@ -73,7 +73,7 @@ fbq('init','1822142235459212');fbq('track','PageView');
       <ul class="confia" data-hero>
         <li>Garantia incondicional de 7 dias</li><li>Compra segura pela Kiwify</li><li>Acesso por e-mail na hora</li>
       </ul>
-      <p class="apoio" id="apoio" data-hero>Uma tarefa por dia · fichas e checklist para imprimir · 31 fontes oficiais · 7 dias de garantia</p>
+      <p class="apoio" id="apoio" data-hero>Papel e caneta bastam · um dia perdido não derruba o plano · garantia de 7 dias</p>
     </div>
 
     <div class="hero-visual" data-hero-visual>
@@ -162,7 +162,7 @@ fbq('init','1822142235459212');fbq('track','PageView');
       <p class="rotulo">O tamanho do assunto</p>
       <div class="tamanho-g">
         <div><b class="num-g" data-to="82" data-suf="%">82%</b><span>das famílias brasileiras tinham algum tipo de dívida em julho de 2026, o maior patamar da série (CNC, via Agência Brasil) <sup class="fn"><a href="#notas">F1</a></sup></span></div>
-        <div><b class="num-g" data-to="83.9" data-dec="1" data-suf=" mi">83,9 mi</b><span>de inadimplentes contabilizados pela Serasa no mesmo mês <sup class="fn"><a href="#notas">F3</a></sup></span></div>
+        <div><b class="num-g" data-to="83.9" data-dec="1" data-suf=" mi">83,9 mi</b><span>de pessoas com nome sujo (inadimplentes) contabilizadas pela Serasa no mesmo mês <sup class="fn"><a href="#notas">F3</a></sup></span></div>
       </div>
       <p class="gancho-c">Esses números explicam por que o assunto vira notícia. Mas não ajudam a decidir o que fazer <strong>amanhã de manhã</strong>. Então qual é a ordem certa?</p>
     </div>
@@ -269,7 +269,7 @@ fbq('init','1822142235459212');fbq('track','PageView');
     </div>
 
     <div class="cta-linha" data-r>
-      <a class="btn" href="https://pay.kiwify.com.br/GmLoqDY" data-checkout data-pos="conteudo"><span class="btn-t">Quero o mapa, o orçamento e o roteiro</span><span class="btn-s">R$ 29,90 · pagamento único</span><i class="btn-brilho" aria-hidden="true"></i></a>
+      <a class="btn" href="https://pay.kiwify.com.br/GmLoqDY" data-checkout data-pos="conteudo"><span class="btn-t">Quero o mapa, o orçamento e o roteiro</span><span class="btn-s">R$ 29,90 · Pix ou cartão</span><i class="btn-brilho" aria-hidden="true"></i></a>
     </div>
   </div>
 </section>
@@ -419,7 +419,7 @@ fbq('init','1822142235459212');fbq('track','PageView');
       <div class="gar-txt">
         <h2 class="h2 m">Leia, aplique e decida. 7&nbsp;dias para testar, sem risco.</h2>
         <p>Faça os 3 números, leia o mapa e execute as primeiras tarefas. Se, por qualquer motivo, você não gostar, <strong>devolvemos 100% do valor pago em até 7 dias</strong>, sem perguntas. É o seu direito de arrependimento nas compras pela internet (art. 49 do Código de Defesa do Consumidor) <sup class="fn"><a href="#notas">F6</a></sup>, e a gente o trata como argumento, não como obstáculo.</p>
-        <p>Para pedir: responda o e-mail da compra ou use a central da Kiwify ou chame <a href="https://www.instagram.com/orecomeco.financeiro/" target="_blank" rel="noopener">@orecomeco.financeiro</a> no Instagram.<!-- EMAIL-SUPORTE: incluir quando o CEO criar --></p>
+        <p>Para pedir: responda o e-mail da compra ou use a central da Kiwify, escreva para <a href="mailto:orecomecofinanceiro97@gmail.com">orecomecofinanceiro97@gmail.com</a> ou chame <a href="https://www.instagram.com/orecomeco.financeiro/" target="_blank" rel="noopener">@orecomeco.financeiro</a> no Instagram.</p>
         <p class="aviso-g">A garantia é de <strong>devolução do valor</strong>. <strong>Não é garantia de resultado</strong>: o guia é educativo e não promete quitar dívidas, conseguir desconto ou limpar o nome.</p>
         <a class="btn" href="https://pay.kiwify.com.br/GmLoqDY" data-checkout data-pos="garantia"><span class="btn-t">Testar por 7 dias sem risco</span><i class="btn-brilho" aria-hidden="true"></i></a>
       </div>
@@ -439,8 +439,8 @@ fbq('init','1822142235459212');fbq('track','PageView');
       <details data-r><summary>Vocês negociam por mim ou "limpam o nome"?</summary><div><p>Não. Não somos banco, financeira, escritório de advocacia nem consultoria, e <strong>não negociamos nada em seu nome</strong>. Desconfie de quem cobra para "limpar o nome" ou "garantir vaga": é um dos sinais de golpe que o capítulo 8 ensina a reconhecer <sup class="fn"><a href="#notas">F17</a></sup>.</p></div></details>
       <details data-r><summary>Já tem muita coisa grátis na internet. Por que pagar R$ 29,90?</summary><div><p>Tem, e parte é boa. Mas conteúdo solto não vem em <strong>ordem</strong>, nem com tarefa para cada dia, fichas prontas e roteiros de conversa. Se você prefere montar tudo sozinho, a amostra grátis mostra o começo. Se prefere o caminho pronto em 30 dias, é para isso que o guia existe.</p></div></details>
       <details data-r><summary>E o Desenrola? Posso contar com desconto do governo?</summary><div><p>O guia traz um quadro com a <strong>situação dos programas em 30/09/2026</strong>: o Novo Desenrola Brasil <strong>encerrou em 31/08/2026</strong>; o Desenrola 3.0 tem cronograma próprio (propostas dos credores em nov/dez de 2026 e repasse a partir de fev/2027, sujeito a mudança por ser medida provisória) <sup class="fn"><a href="#notas">F18</a></sup><sup class="fn"><a href="#notas">F19</a></sup>. <strong>Não conte com desconto que ainda não foi oficializado para você.</strong> Confira sempre os canais oficiais.</p></div></details>
-      <details data-r><summary>E se a conta simplesmente não fechar, mesmo cortando gastos?</summary><div><p>Isso acontece e não é sentença. O capítulo 6 explica o procedimento de <strong>superendividamento</strong> (Lei 14.181/2021): audiência de conciliação com os credores e plano de pagamento de até cinco anos, preservando o mínimo existencial <sup class="fn"><a href="#notas">F8</a></sup>. A porta de entrada costuma ser o <strong>Procon</strong> ou a <strong>Defensoria Pública</strong>, gratuitos <sup class="fn"><a href="#notas">F22</a></sup>. Você leva o Mapa e o Orçamento que fez no plano.</p></div></details>
-      <details data-r><summary>Qual conta pago primeiro?</summary><div><p>O guia usa três níveis: <strong>1) essencial ou risco imediato</strong> (moradia, luz, água, gás, dívida com garantia, o que está na Justiça), <strong>2) caras</strong> (cartão no rotativo, cheque especial), <strong>3) demais</strong>. Dentro disso, você escolhe <strong>avalanche</strong> (maior juros primeiro) ou <strong>bola de neve</strong> (menor saldo primeiro); a melhor é a que você consegue manter <sup class="fn"><a href="#notas">F27</a></sup>.</p></div></details>
+      <details data-r><summary>E se a conta simplesmente não fechar, mesmo cortando gastos?</summary><div><p>Isso acontece e não é sentença. O capítulo 6 explica o procedimento para quem deve mais do que consegue pagar, o <strong>superendividamento</strong> (Lei 14.181/2021): audiência de conciliação com os credores e plano de pagamento de até cinco anos, preservando o dinheiro básico para viver (o "mínimo existencial") <sup class="fn"><a href="#notas">F8</a></sup>. A porta de entrada costuma ser o <strong>Procon</strong> ou a <strong>Defensoria Pública</strong>, gratuitos <sup class="fn"><a href="#notas">F22</a></sup>. Você leva o Mapa e o Orçamento que fez no plano.</p></div></details>
+      <details data-r><summary>Qual conta pago primeiro?</summary><div><p>O guia usa três níveis: <strong>1) essencial ou risco imediato</strong> (moradia, luz, água, gás, dívida com garantia, o que está na Justiça), <strong>2) caras</strong> (cartão no rotativo, cheque especial), <strong>3) demais</strong>. Dentro disso, você escolhe pagar primeiro a que tem <strong>juros mais altos</strong> (método "avalanche") ou a de <strong>menor valor</strong> (método "bola de neve"); a melhor é a que você consegue manter <sup class="fn"><a href="#notas">F27</a></sup>.</p></div></details>
       <details data-r><summary>Minha renda varia (autônomo, MEI, bicos). Serve?</summary><div><p>O plano usa o <strong>menor valor dos últimos três meses</strong> para a parte que varia, justamente para o orçamento não depender de um mês bom. Se a renda for muito irregular, o resultado do dia 13 será mais conservador, e isso é proposital.</p></div></details>
       <details data-r><summary>Posso fazer tudo no celular? Preciso da planilha?</summary><div><p>O ebook é um PDF leve que abre no celular. As <strong>8 fichas</strong> funcionam impressas ou copiadas num caderno. A planilha (opcional, oferecida no checkout) calcula margem, ordem e propostas, mas <strong>não é obrigatória</strong>.</p></div></details>
       <details data-r><summary>Como recebo o guia e como peço reembolso?</summary><div><p>Você recebe o acesso por e-mail logo após a confirmação do pagamento (ebook + bônus). Para reembolso, dentro de 7 dias, responda o e-mail da compra ou use a central da Kiwify. Devolvemos 100% do valor.</p></div></details>
@@ -469,7 +469,7 @@ fbq('init','1822142235459212');fbq('track','PageView');
 
 <footer class="rodape">
   <div class="wrap">
-    <p class="rod-id"><strong>O Recomeço Financeiro</strong> · Responsável: Victor H. R. · Pagamento processado pela Kiwify · Dúvidas: <a href="https://www.instagram.com/orecomeco.financeiro/" target="_blank" rel="noopener">@orecomeco.financeiro</a> no Instagram<!-- EMAIL-SUPORTE: incluir quando o CEO criar --></p>
+    <p class="rod-id"><strong>O Recomeço Financeiro</strong> · Responsável: Victor H. R. · Pagamento processado pela Kiwify · Suporte: <a href="mailto:orecomecofinanceiro97@gmail.com">orecomecofinanceiro97@gmail.com</a> · <a href="https://www.instagram.com/orecomeco.financeiro/" target="_blank" rel="noopener">@orecomeco.financeiro</a> no Instagram</p>
     <p class="rod-links"><a href="[LINK_POLITICA_PRIVACIDADE]">Política de privacidade</a> · <a href="[LINK_TERMOS_DE_USO]">Termos de uso</a> · <a href="[LINK_POLITICA_REEMBOLSO]">Política de reembolso (7 dias)</a></p>
     <p class="aviso"><strong>Aviso.</strong> Este conteúdo é <strong>educativo</strong> e <strong>não substitui</strong> a orientação de um profissional de finanças, de um advogado, da Defensoria Pública ou do Procon. <strong>Não é consultoria financeira, jurídica nem de crédito.</strong> Não há garantia de resultado, quitação, desconto, redução de juros nem "nome limpo". Leis, taxas e programas do governo mudam: confira sempre a regra atual no site oficial. Os valores em reais dos exemplos são hipotéticos. Este site não é afiliado a nenhum banco, ao governo, ao Serasa ou a qualquer órgão público. A compra é processada pela Kiwify.</p>
     <details class="notas" id="notas">
